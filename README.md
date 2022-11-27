@@ -74,6 +74,12 @@ Ante cualquier consulta pueden mandarme un mensaje a **gaspar.garciabarnetche@ad
 
 - Days Excluded: Arreglo de fechas que no se desean cargar, ejemplo como no quise cargar el feriado del 21 de noviembre incluí \[21\]. Los sábados y domingos se encuentran automáticamente excluidos. Este parámetro es opcional, si no se lo incluye solo se excluirán de la carga los sábados y domingos
 
+Ejemplo de comando script
+```javascript
+generateMontlyRequests('Training Adila', 2022, 11, [21]) //Excluido el día 21 del mes
+generateMontlyRequests('Training Adila', 2022, 11) //Si no quiero excluir dias
+```
+
 ![Step 23 screenshot.](archivos_tutorial/image009.jpg)
 
 * * *
