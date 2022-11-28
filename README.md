@@ -76,8 +76,8 @@ Ante cualquier consulta pueden mandarme un mensaje a **gaspar.garciabarnetche@ad
 
 Ejemplo de comando script
 ```javascript
-generateMontlyRequests('Training Adila', 2022, 11, [21]) //Excluido el día 21 del mes
-generateMontlyRequests('Training Adila', 2022, 11) //Si no quiero excluir dias
+generateMonthlyRequests('Training Adila', 2022, 11, [21]) //Excluido el día 21 del mes
+generateMonthlyRequests ('Training Adila', 2022, 11) //Si no quiero excluir dias
 ```
 
 ![Step 23 screenshot.](archivos_tutorial/image009.jpg)
