@@ -1,10 +1,16 @@
+/*
+* Este código define una función llamada getTagID que toma dos argumentos: @param tagName y spiritID. 
+* La función realiza una operación POST de fetch con una URL y un cuerpo JSON que contiene un objeto payload con los valores de spiritID, defaultTimezone y objectId. 
+* Luego, convierte la respuesta del fetch en un objeto JSON y busca un objeto tag en la propiedad data.availableTags cuyo nombre sea igual al valor del argumento tagName (ignorando mayúsculas y minúsculas). 
+* Si se encuentra un objeto tag, la función devuelve su valor id. Si no se encuentra un tag o si ocurre algún error durante el proceso, la función devuelve 0.
+*/
 const getTagID = async(tagName, spiritID) => {
     try {
 
         const payload = {
             _spirit: spiritID,
             defaultTimezone: "America/Buenos_Aires",
-            objectId: 2215439,
+            objectId: 2215439,.
         }
         console.debug('Getting tag ID', payload)
         const response = await fetch('https://app.connecteam.com/api/UserDashboard/PunchClock/Data/', {
