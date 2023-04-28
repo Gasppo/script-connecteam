@@ -68,7 +68,7 @@ const createRequest = async (startDate, tagID, spiritID) => {
             _spirit: spiritID
         }
 
-        fetch('https://app.connecteam.com/api/UserDashboard/PunchClock/ShiftRequest/', {
+        await fetch('https://app.connecteam.com/api/UserDashboard/PunchClock/ShiftRequest/', {
             "headers": { "content-type": "application/json" },
             "body": JSON.stringify(payload),
             "method": "POST",
